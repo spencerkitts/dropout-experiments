@@ -1,0 +1,65 @@
+{
+  "dropout": 0.3,
+  "checkpoints": [
+    {
+      "step": 10,
+      "acc_on": 0.88,
+      "acc_off": 1.0,
+      "avg_acc": 0.94
+    },
+    {
+      "step": 20,
+      "acc_on": 0.97,
+      "acc_off": 1.0,
+      "avg_acc": 0.985
+    },
+    {
+      "step": 30,
+      "acc_on": 1.0,
+      "acc_off": 1.0,
+      "avg_acc": 1.0
+    },
+    {
+      "step": 40,
+      "acc_on": 1.0,
+      "acc_off": 1.0,
+      "avg_acc": 1.0
+    },
+    {
+      "step": 50,
+      "acc_on": 1.0,
+      "acc_off": 1.0,
+      "avg_acc": 1.0
+    },
+    {
+      "step": 60,
+      "acc_on": 1.0,
+      "acc_off": 1.0,
+      "avg_acc": 1.0
+    },
+    {
+      "step": 70,
+      "acc_on": 1.0,
+      "acc_off": 1.0,
+      "avg_acc": 1.0
+    },
+    {
+      "step": 80,
+      "acc_on": 1.0,
+      "acc_off": 1.0,
+      "avg_acc": 1.0
+    },
+    {
+      "step": 90,
+      "acc_on": 1.0,
+      "acc_off": 1.0,
+      "avg_acc": 1.0
+    },
+    {
+      "step": 100,
+      "acc_on": 0.99,
+      "acc_off": 1.0,
+      "avg_acc": 0.995
+    }
+  ]
+}

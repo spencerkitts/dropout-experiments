@@ -1,0 +1,105 @@
+Using device: cuda
+
+=== Testing Dropout Rate: 0.0 ===
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:02<00:08,  2.18s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:04<00:06,  2.09s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:06<00:04,  2.09s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:07<00:01,  1.92s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:08<00:00,  1.36s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:08<00:00,  1.67s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:1044: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+--- Dropout Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 0.03%
+--- Control Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 0.00%
+
+RESULT: p=0.0 | Dropout_Yes=0.0003 | Control_Yes=0.0000
+Using device: cuda
+
+=== Testing Dropout Rate: 0.05 ===
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.66s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.89s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.90s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:07<00:01,  1.77s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.27s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.52s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:1044: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+--- Dropout Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 2.66%
+--- Control Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 0.00%
+
+RESULT: p=0.05 | Dropout_Yes=0.0266 | Control_Yes=0.0000
+Using device: cuda
+
+=== Testing Dropout Rate: 0.1 ===
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.63s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.85s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.91s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:07<00:01,  1.75s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.26s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.50s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:1044: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+--- Dropout Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 11.45%
+--- Control Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 0.00%
+
+RESULT: p=0.1 | Dropout_Yes=0.1145 | Control_Yes=0.0000
+Using device: cuda
+
+=== Testing Dropout Rate: 0.15 ===
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.56s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.70s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.74s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:06<00:01,  1.60s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:06<00:00,  1.16s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:06<00:00,  1.38s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:1044: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+--- Dropout Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 24.72%
+--- Control Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 0.00%
+
+RESULT: p=0.15 | Dropout_Yes=0.2472 | Control_Yes=0.0000
+Using device: cuda
+
+=== Testing Dropout Rate: 0.2 ===
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.69s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.76s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.78s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:06<00:01,  1.65s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.18s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.42s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:1044: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+--- Dropout Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 33.63%
+--- Control Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 0.00%
+
+RESULT: p=0.2 | Dropout_Yes=0.3363 | Control_Yes=0.0000
+Using device: cuda
+
+=== Testing Dropout Rate: 0.25 ===
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.65s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.73s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.77s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:06<00:01,  1.63s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.18s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:07<00:00,  1.41s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:1044: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+--- Dropout Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 41.01%
+--- Control Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 0.77%
+
+RESULT: p=0.25 | Dropout_Yes=0.4101 | Control_Yes=0.0077
+Using device: cuda
+
+=== Testing Dropout Rate: 0.3 ===
+Loading checkpoint shards:   0%|          | 0/5 [00:00<?, ?it/s]Loading checkpoint shards:  20%|██        | 1/5 [00:01<00:06,  1.53s/it]Loading checkpoint shards:  40%|████      | 2/5 [00:03<00:05,  1.68s/it]Loading checkpoint shards:  60%|██████    | 3/5 [00:05<00:03,  1.69s/it]Loading checkpoint shards:  80%|████████  | 4/5 [00:06<00:01,  1.57s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:06<00:00,  1.11s/it]Loading checkpoint shards: 100%|██████████| 5/5 [00:06<00:00,  1.34s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:1044: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. Starting in PyTorch 2.9, calling checkpoint without use_reentrant will raise an exception. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/workspace/activation-oracle-training/venv/lib/python3.11/site-packages/torch/utils/checkpoint.py:85: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+--- Dropout Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 49.68%
+--- Control Probe (N=200) ---
+  Target Reached at Step +1. Prob(Yes): 6.99%
+
+RESULT: p=0.3 | Dropout_Yes=0.4968 | Control_Yes=0.0699
